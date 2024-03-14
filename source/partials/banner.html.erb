@@ -1,17 +1,29 @@
 <div class="d-flex flex-column justify-content-center banner-color">
 
 	<div class="d-flex flex-column justify-content-center align-items-center">
-<div class="row align-items-center ms-2">
-    <div class="col-4 col-md-4 col-sm-12">
+<div class="row align-items-center">
+    <div style="width: 38vh;">
       <%= image_tag 'projects/profile_clear.png', alt: "profile photo", class: 'avatar-large' %>
     </div>
-    <div class="col-8 col-md-8 col-sm-12">
-      <h1 class="title-main fw-light text-white">Portfolio</h1>
-      <p>Words here</p>
-      <div class="button-group">
-      <button class="button-blue">Normal Mode</button>
-      <button class="button-blue">Cartoon Mode</button>
-      </div>
+    <div style="width: 68vh; margin-left: 60px;">
+      <h1 class="title-main fw-light text-white">Hi there</h1>
+      <p>Welcome to my website. I'm Sarah and...
+      </p>
+      <button class="primary" onclick="window.dialog.showModal();">TLDR</button>
+
+          <dialog id="dialog">
+            <h2>Hello.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id ex pulvinar, volutpat dui vel, finibus libero. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras orci lectus, pretium at laoreet suscipit, bibendum nec leo. Nunc commodo mauris a tincidunt blandit. Quisque risus ante, mollis et est pretium, ultrices blandit lacus. Mauris quis blandit orci, vitae porta diam. Cras sagittis eu justo sed vestibulum.
+
+Nam tellus erat, scelerisque sed quam quis, porta fermentum dolor. Curabitur iaculis ipsum urna, nec rutrum mi pharetra vestibulum. Quisque nibh eros, ultrices nec purus sit amet, sagittis iaculis ante. Ut tempus hendrerit massa, ut malesuada velit tristique quis. Fusce eget urna sed diam sodales rutrum. Integer mollis ex ex, id pretium arcu auctor a. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer nec pellentesque nisi. Nunc ac auctor velit, sed fringilla tortor.
+
+Donec feugiat accumsan vulputate. Vivamus dapibus vitae leo sit amet iaculis. Aliquam aliquet scelerisque augue, non pellentesque felis ullamcorper vel. Quisque tellus magna, vestibulum sed suscipit eget, consectetur in est. Sed tristique mauris non fringilla aliquam. Sed accumsan efficitur varius. Vestibulum in condimentum velit. Donec accumsan nisi mauris, vel ullamcorper libero dapibus id.
+
+In imperdiet hendrerit egestas. Quisque eleifend purus id arcu laoreet ornare. Nulla gravida elit quis dictum condimentum. Phasellus blandit sodales eros, quis malesuada nunc. Curabitur dignissim ut massa eu cursus. Duis imperdiet semper ex. Nullam eget velit nulla. Nulla congue pharetra odio, vel porttitor nisl sodales eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed sit amet tortor congue, sagittis enim non, eleifend justo. Maecenas mauris tellus, finibus non sem eu, imperdiet aliquet erat. Maecenas consequat, augue sit amet auctor pretium, nunc risus sollicitudin dolor, tempor consequat lacus magna in nisi. Phasellus gravida dui eu risus suscipit, ut sollicitudin sem gravida.
+
+Quisque id iaculis velit. Integer eu metus non massa tempor tristique eu sed ex. Ut ligula nisl, mattis et ornare et, hendrerit a eros. Nam vitae justo dolor. Etiam scelerisque risus sit amet elit luctus ullamcorper ac sit amet orci. Vivamus ac felis sit amet felis fermentum cursus. Aliquam velit lorem, molestie non libero eu, consectetur euismod nisi. Nam volutpat, leo ac euismod aliquam, ex ipsum lobortis quam, id semper tortor mi rhoncus ipsum. Quisque porta ultrices neque vel varius. Morbi sed cursus diam, ut semper arcu. Duis dictum aliquam ante. Integer hendrerit dignissim urna, eget cursus ligula imperdiet quis.</p>
+            <button onclick="window.dialog.close();" aria-label="close" class="x">❌</button>
+          </dialog>
     </div>
   </div>
 </div>

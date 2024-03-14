@@ -8,48 +8,76 @@
             <div class="card-product">
               <div class="card-background"></div>
               <div class="floating">
-                <%= image_tag 'projects/placeholder.png', alt: "project image", class: "card-product-img" %>
+                <%= image_tag 'projects/care-key-main.png', alt: "project image", style: "width: 330px;", class: "card-product-img" %>
               </div>
               <div class="card-button-info">
               <div class="card-product-infos w-100">
                 <div class="text-box">
-                  <h2>Name here</h2>
+                  <h2>Care Key</h2>
                 </div>
                   <p>Description here</p>
                 </div>
-                  <button class="button-blue">Click here</button>
+                   <div class="d-flex flex-direction-row">
+                  <button class="button-blue" style="margin-right:10px;">More Details</button>
+                  <button class="primary" onclick="window.carousel1.showModal();">Quick Look</button>
+                  <dialog id="carousel1">
+                    <h2>Care Key</h2>
+                    <p> The key to leveling up self-care</p>
+                    <%= image_tag 'projects/care-key-modal.png', class:"modal-img", alt: "project image"%>
+                  <button onclick="window.carousel1.close();" aria-label="close" class="x">❌</button>
+                  </dialog>
+                 </div>
               </div>
             </div>
+
 
              <div class="card-product-left">
               <div class="card-background-left"></div>
               <div class="floating">
-                <%= image_tag 'projects/placeholder_image_2.png', alt: "project image", class: "card-product-img-left" %>
+                <%= image_tag 'projects/placeholder_image_2.png', alt: "project image", style: "width: 385px;", class: "card-product-img-left" %>
               </div>
               <div class="card-button-info-left">
               <div class="card-product-infos">
                 <div class="text-box">
-                  <h2>Name here</h2>
+                  <h2>Weeb Watch</h2>
                 </div>
                   <p>Description here</p>
                 </div>
-                  <button class="button-blue">Click here</button>
+                 <div class="d-flex flex-direction-row">
+                  <button class="button-blue" style="margin-right:10px;">More Details</button>
+                   <button class="primary" onclick="window.carousel2.showModal();">Quick Look</button>
+                  <dialog id="carousel2">
+                    <h2>Weeb Watch</h2>
+                    <p> Organized for the greatest otakus</p>
+                    <%= image_tag 'projects/weeb-watcher-placeholder.png', class:"modal-img", alt: "project image"%>
+                  <button onclick="window.carousel2.close();" aria-label="close" class="x">❌</button>
+                  </dialog>
+                 </div>
               </div>
             </div>
 
              <div class="card-product">
               <div class="card-background"></div>
               <div class="floating">
-                <%= image_tag 'projects/placeholder.png', alt: "project image", class: "card-product-img" %>
+                <%= image_tag 'projects/paw-time-pc.png', alt: "project image", style: "width: 385px;", class: "card-product-img" %>
               </div>
               <div class="card-button-info">
               <div class="card-product-infos w-100">
                 <div class="text-box">
-                  <h2>Name here</h2>
+                  <h2>Paw Time</h2>
                 </div>
                   <p>Description here</p>
                 </div>
-                  <button class="button-blue">Click here</button>
+                  <div class="d-flex flex-direction-row">
+                    <button class="button-blue" style="margin-right:10px;">More Details</button>
+                     <button class="primary" onclick="window.carousel3.showModal();">Quick Look</button>
+                  <dialog id="carousel3">
+                    <h2>Paw Time</h2>
+                    <p> Book a reservation with a furry friend</p>
+                    <%= image_tag 'projects/paw-time-modal.png', class:"modal-img", alt: "project image"%>
+                  <button onclick="window.carousel3.close();" aria-label="close" class="x">❌</button>
+                  </dialog>
+                  </div>
               </div>
             </div>
 
