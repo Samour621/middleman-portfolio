@@ -1,7 +1,15 @@
 .cards {
   display: flex;
   flex-direction: column;
+  gap: 14px;
+}
+
+.interest-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 16px;
+  justify-items: center;
+  margin-top: 20px;
 }
 
 .card-product {
@@ -10,6 +18,19 @@
   display: flex;
   align-items: center;
   position: relative;
+}
+
+.interest-card {
+  width: 120px;
+  height: 120px;
+  border-radius: 15px;
+  background-color: aqua;
+  transition: all 400ms;
+}
+
+.interest-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1), 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .card-product-left {
