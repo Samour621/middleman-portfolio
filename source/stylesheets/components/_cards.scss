@@ -108,7 +108,15 @@
 .card-button-info {
   display: flex;
   flex-direction: column;
-  margin-left: 15%;
+
+}
+
+#extra-margin {
+  margin-left: 12%;
+}
+
+#less-margin {
+  margin-left: 5%;
 }
 
 .card-button-info-left {
@@ -138,7 +146,7 @@
 }
 
 .card-product .card-product-infos {
-  padding-bottom: 50px;
+  padding-bottom: 20px;
   &:hover {
     .external-link {
       opacity: 1;
@@ -147,7 +155,7 @@
 }
 
 .card-product-left .card-product-infos {
-  padding-bottom: 50px;
+  padding-bottom: 20px;
   &:hover {
     .external-link {
       opacity: 1;
@@ -214,5 +222,77 @@
 @media (min-width: 1200px) {
   .cards {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+
+.other-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 25px;
+}
+
+.other-card-product {
+  overflow: hidden;
+  height: 160px;
+  background: aqua;
+  border-radius: 15px;
+  // box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: ease filter, transform 0.3s;
+	cursor: pointer;
+	transform-origin: center;
+    &:hover {
+		transform: translateY(-5px);
+	}
+}
+
+.other-card-product img {
+  height: 100%;
+  width: 184px;
+  object-fit: cover;
+}
+
+.other-card-product h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.other-card-product p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.other-card-product .other-card-product-infos {
+  padding: 16px;
+  &:hover {
+    .external-link {
+      opacity: 1;
+    }
+  }
+}
+
+.other-card-links {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.external-link {
+  opacity: 0;
+  color: $gray;
+  transition: opacity 1s;
+  text-decoration: none;
+  font-size: 20px;
+  &:hover {
+    cursor: pointer;
+    color: $gray
   }
 }
