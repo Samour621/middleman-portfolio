@@ -17,16 +17,16 @@
   height: 15vmin;
   display: grid;
   place-content: center;
-  color: white;
+  color: rgb(68, 68, 68);
   // text-shadow: 0 1px 0 #000;
 
   --border-angle: 0turn; // For animation.
   --main-bg: conic-gradient(
       from var(--border-angle),
-      rgb(12, 192, 223),
-      rgb(12, 192, 223) 5%,
-      rgb(12, 192, 223) 60%,
-      rgb(12, 192, 223) 95%
+      rgb(164, 239, 252),
+      rgb(164, 239, 252) 5%,
+      rgb(164, 239, 252) 60%,
+      rgb(164, 239, 252) 95%
     );
 
   border: solid 5px transparent;
