@@ -7,29 +7,31 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 
 .box {
-  width: 50vmin;
-  height: 21vmin;
+  top: 85px;
+  width: 74vmin;
+  height: 15vmin;
   display: grid;
   place-content: center;
-  color: white;
+  color: rgb(52, 52, 52);
   // text-shadow: 0 1px 0 #000;
 
   --border-angle: 0turn; // For animation.
   --main-bg: conic-gradient(
       from var(--border-angle),
-      rgb(57, 189, 255),
-      rgb(57, 189, 255) 5%,
-      rgb(57, 189, 255) 60%,
-      rgb(57, 189, 255) 95%
+      rgb(255, 255, 255),
+      rgb(255, 255, 255) 5%,
+      rgb(255, 255, 255) 60%,
+      rgb(255, 255, 255) 95%
     );
 
   border: solid 5px transparent;
   border-radius: 2em;
-  --gradient-border: conic-gradient(from var(--border-angle), transparent 25%, #08f, rgb(192, 83, 242), rgb(0, 255, 149) 99%, transparent);
+  --gradient-border: conic-gradient(from var(--border-angle), transparent 25%, rgba(101, 63, 42), rgba(101, 63, 42, 0.523), rgba(101, 63, 42, 0.654) 99%, transparent);
 
   background:
     // padding-box clip this background in to the overall element except the border.
@@ -57,4 +59,26 @@
   syntax: "<angle>";
   inherits: true;
   initial-value: 0turn;
+}
+
+.about-text-box .subtitle {
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.about-text-box .title {
+  margin-bottom: 0px;
+  font-size: 2px;
+  font-weight: bold;
+}
+
+.about-text-box .infos p {
+  margin-top: -5px;
+  font-size: 16px;
+}
+
+.about-text-box .btn {
+  display: inline-block;
+  margin: 0 2px;
 }

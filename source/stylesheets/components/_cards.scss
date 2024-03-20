@@ -14,7 +14,7 @@
 
 .card-product {
   overflow: hidden;
-  height: 330px;
+  height: 450px;
   display: flex;
   align-items: center;
   position: relative;
@@ -24,7 +24,7 @@
   width: 120px;
   height: 120px;
   border-radius: 15px;
-  background-color: aqua;
+  background-color: #0cc0df;
   transition: all 400ms;
 }
 
@@ -35,12 +35,12 @@
 
 .card-product-left {
   overflow: hidden;
-  height: 330px;
+  height: 450px;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   position: relative;
-  justify-content: space-between;
+  // justify-content: space-between;
 }
 
 .card-product-img {
@@ -51,10 +51,10 @@
 
 .card-product-img-left {
   height: 100%;
-  width: 330px;
+  width: 450px;
   object-fit: cover;
   position: relative;
-  left: -7%;
+  left: -10%;
 }
 
 
@@ -74,21 +74,21 @@
 }
 
 .card-product h2 {
-  font-size: 16px;
+  font-size: 24px;
   font-weight: bold;
   margin-left: 0 !important;
 }
 
 .card-product-left h2 {
-  font-size: 16px;
+  font-size: 24px;
   font-weight: bold;
   margin-left: 0 !important;
 }
 
 .card-background {
-  width: 45%;
+  width: 40%;
   height: 58%;
-  background-color: aqua;
+  background-color: rgba(12, 192, 223, 0.5);
   border-radius: 15px;
   position: absolute;
   z-index: 0;
@@ -98,7 +98,7 @@
 .card-background-left {
   width: 40%;
   height: 58%;
-  background-color: aqua;
+  background-color: rgba(12, 192, 223, 0.5);
   border-radius: 15px;
   position: absolute;
   z-index: 0;
@@ -108,7 +108,7 @@
 .card-button-info {
   display: flex;
   flex-direction: column;
-
+  max-width:400px;
 }
 
 #extra-margin {
@@ -122,7 +122,8 @@
 .card-button-info-left {
   display: flex;
   flex-direction: column;
-  margin-left: 5%;
+  margin-right: 10%;
+  max-width:400px;
 }
 
 .text-box {
@@ -130,7 +131,7 @@
 }
 
 .card-product p {
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.4;
   opacity: .7;
   margin-bottom: 0;
@@ -138,7 +139,7 @@
 }
 
 .card-product-left p {
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.4;
   opacity: .7;
   margin-bottom: 0;

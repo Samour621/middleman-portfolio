@@ -1,5 +1,5 @@
 
-<div class="row my-2">
+<div class="row my-2 widget">
   <div class="col-12 d-flex justify-content-center">
     <div class="container">
       <div class="d-flex justify-content-center align-items-center"id="about">
@@ -9,10 +9,30 @@
         </div>
           <div class="button-group">
         <button class="button-blue">Normal Mode</button>
-        <button class="button-blue">Cartoon Mode</button>
+        <button class="button-blue" onclick="window.popup1.showModal();">Cartoon Mode</button>
+                  <dialog id="popup1">
+                    <h2>Under Construction</h2>
+                    <p> Currently building and perfecting this feature!</p>
+                    <%= image_tag 'projects/construction.png', class:"modal-img", alt: "project image"%>
+                  <button onclick="window.popup1.close();" aria-label="close" class="x">❌</button>
+                  </dialog>
         </div>
       </div>
     </div>
   </div>
 </div>
 </div>
+
+        <div class="container" style="background-color: rgba(12, 192, 223, 0.5); padding-top: 140px; padding-bottom:20px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;   border-top: 4px solid #653F2A;
+">
+            <div class="row text-md-left" style="margin-left: 80px; margin-right: 80px;">
+                <div class="col-md-3">
+                  <%= image_tag 'projects/profile_white.png', class:"img-thumbnail mb-4", alt: "profile image"%>                </div>
+                <div class="pl-md-4 col-md-9 about-text-box">
+                    <h6 class="title">Sarah Amour</h6>
+                    <p class="subtitle">UI/UX Designer</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, pariatur, aperiam aut autem voluptas odit. Odio ducimus delectus totam sed aliquam sequi praesentium mollitia, illum repudiandae quidem quod, magni magnam.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, eius, nam. Quo praesentium qui temporibus voluptatum, facilis aliquid eligendi fugiat beatae neque inventore non. Laborum repellendus consequatur ullam voluptatum asperiores.</p>
+                </div>
+            </div>
+        </div>
