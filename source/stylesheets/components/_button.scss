@@ -48,6 +48,12 @@
 	}
 }
 
+#disabled {
+  background-color: gray;
+  transition: none;
+  transform: none;
+}
+
 .button-brown {
   background-color: #653F2A;
   border: none;

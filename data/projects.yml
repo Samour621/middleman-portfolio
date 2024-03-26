@@ -7,7 +7,7 @@
 
 - name: Silly Profile
   description: Simple profile showcasing some fun CSS animations and HTML elements
-  image: projects/placeholder.png
+  image: projects/silly-portfolio.png
   url: https://samour621.github.io/profile/
   github: https://github.com/Samour621/profile.git
   online: true
