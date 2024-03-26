@@ -1,8 +1,8 @@
-- name: Longest Word Game
-  description: Decent description of the app
+- name: Ghibli Clone
+  description: Quick clone of Studio Ghibli's site using HTML and CSS
   image: projects/placeholder.png
   url: https://www.google.com
-  github: https://www.github.com
+  github: https://github.com/Samour621/03-Landing-page.git
   online: true
 
 - name: Movie Watchlist
